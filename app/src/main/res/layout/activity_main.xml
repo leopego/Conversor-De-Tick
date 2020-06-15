@@ -7,42 +7,63 @@
     android:background="#39373b"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnCalcular"
-        android:layout_width="308dp"
-        android:layout_height="87dp"
-        android:layout_marginBottom="32dp"
-        android:background="#8b898c"
-        android:fontFamily="sans-serif-condensed-medium"
-        android:text="Calcular"
-        android:textColor="#ffffff"
-        android:textSize="36sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
     <TextView
         android:id="@+id/txtTitulo"
-        android:layout_width="367dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="44dp"
+        android:layout_width="374dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="48dp"
         android:fontFamily="sans-serif-condensed-medium"
-        android:text="CONVERSOR DE TICK"
+        android:text="CONVERSOR DE VALORES"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="36sp"
+        android:textSize="44sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <SeekBar
-        android:id="@+id/skbContratos"
+    <Button
+        android:id="@+id/btnPontosReais"
         android:layout_width="367dp"
-        android:layout_height="90dp"
-        android:layout_marginTop="64dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/colorOrange"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="PONTOS -> REAIS"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
+    <Button
+        android:id="@+id/btnReaisPontos"
+        android:layout_width="372dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorOrange"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="REAIS -> PONTOS"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPontosReais" />
+
+    <Button
+        android:id="@+id/btnCalcContrato"
+        android:layout_width="372dp"
+        android:layout_height="146dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorOrange"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="CALCULAR NUMERO DE CONTRATOS"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReaisPontos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
